@@ -3,10 +3,14 @@ import router from './router'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 import App from './App.vue'
-import env from './env'
-
+//import env from './env'
+const mock = true;
+if (mock) {
+    require('./mock/api')
+}
 axios.defaults.baseURL = '/api';
 axios.defaults.timeout = 8000;
+//axios.default.baseURL = env.baseURL;
 axios.interceptors.response.use(function(response) {
   let res = response.data;//这个response不是接口返回，而是axios封装给我们的。response.data才是接口返回值。
   if (res.status == 0) {
