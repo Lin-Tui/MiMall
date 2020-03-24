@@ -1,30 +1,43 @@
 {
-  "name": "mimall",
+  "name": "mall",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve --mode=development",
-    "build": "vue-cli-service build --mode=test",
-    "lint": "vue-cli-service lint --mode=production"
+    "serve": "vue-cli-service serve",
+    "test": "vue-cli-service serve",
+    "prev": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "axios": "^0.19.2",
-    "core-js": "^3.6.4",
-    "mockjs": "^1.1.0",
-    "vue": "^2.6.11",
-    "vue-axios": "^2.1.5",
-    "vue-router": "^3.1.6",
-    "vuex": "^3.1.3"
+    "@babel/plugin-syntax-dynamic-import": "^7.7.4",
+    "axios": "^0.19.0",
+    "core-js": "^3.3.2",
+    "qrcode": "^1.4.4",
+    "vue": "^2.6.10",
+    "vue-infinite-scroll": "^2.0.2",
+    "vue-router": "^3.1.3",
+    "vuex": "^3.1.1"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.2.0",
-    "@vue/cli-plugin-eslint": "^4.2.0",
-    "@vue/cli-service": "^4.2.0",
+    "@vue/cli-plugin-babel": "^4.0.0",
+    "@vue/cli-plugin-eslint": "^4.0.0",
+    "@vue/cli-service": "^4.0.0",
+    "axios": "^0.19.0",
     "babel-eslint": "^10.0.3",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^6.1.2",
-    "sass-loader": "^8.0.2",
-    "vue-template-compiler": "^2.6.11"
+    "babel-plugin-component": "^1.1.1",
+    "element-ui": "^2.13.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "jsonp": "^0.2.1",
+    "mockjs": "^1.1.0",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0",
+    "vue-awesome-swiper": "^3.1.3",
+    "vue-axios": "^2.1.5",
+    "vue-cookie": "^1.1.4",
+    "vue-lazyload": "^1.3.3",
+    "vue-template-compiler": "^2.6.10"
   },
   "eslintConfig": {
     "root": true,
@@ -35,10 +48,15 @@
       "plugin:vue/essential",
       "eslint:recommended"
     ],
+    "rules": {},
     "parserOptions": {
       "parser": "babel-eslint"
-    },
-    "rules": {}
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
   },
   "browserslist": [
     "> 1%",

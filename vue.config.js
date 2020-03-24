@@ -1,10 +1,10 @@
 module.exports = {
     devServer: {
         host: 'localhost',
-        port: 8080,
+        port: 8081,
         proxy: {
             '/api': {
-                target: 'https://www/imooc.com',
+                target: 'http://mall-pre.springboot.cn',
                 changeOrigin: true,
                 pathRewrite: {
                     './api':''

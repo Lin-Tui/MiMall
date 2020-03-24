@@ -15,6 +15,10 @@ Vue.use(Router);
 export default new Router({
     routes: [
         {
+//因为部分页面共用nav-header和nav-footer组件
+//定义一个home页面，里面放置了共用的两个组件
+//然后将其他组件加载在router-view中
+//这么做的好处是无需在每个页面需要头部和底部组件中去引入组件。
             path: '/',
             name: 'home',
             component:Home,
