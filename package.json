@@ -32,7 +32,7 @@
     "eslint-plugin-vue": "^5.0.0",
     "jsonp": "^0.2.1",
     "mockjs": "^1.1.0",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "qrcode": "^1.4.4",
     "sass-loader": "^8.0.0",
     "vue-awesome-swiper": "^3.1.3",
